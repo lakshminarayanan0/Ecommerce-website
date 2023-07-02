@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import AddToCart from './AddToCart';
-import { Link } from 'react-router-dom';
+
 
 
 
