@@ -13,7 +13,6 @@ const ProductCard = ({ product }) => {
 
   return (
  
-    <Link to={`/product/${product.id}`} className="product-card-link">
   <Card 
   style={{width:'',height:'500px',margin:'17px',borderRadius:'20px',padding:'10px'}}
   bg='secondary'>
@@ -36,7 +35,7 @@ const ProductCard = ({ product }) => {
     </Card.Body>
 
   </Card>
-  </Link>
+ 
 );
   }
 
