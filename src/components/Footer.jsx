@@ -5,8 +5,6 @@ import { faInstagram, faFacebook, faLinkedin, faGithub } from '@fortawesome/free
 
 function Footer() {
 
- const date=new Date().getFullYear()
-
   return (
     <footer className='container-fluid bg-dark'>
       <main>

@@ -35,7 +35,6 @@
 
 
 import { useDispatch, useSelector } from "react-redux";
-import { useCartContext } from "../context/cart";
 import { addToCartRedux, removeFromCartRedux } from "../store/cart";
 
 
