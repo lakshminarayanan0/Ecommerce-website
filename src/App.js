@@ -15,7 +15,7 @@ function App() {
  
 
   return (
-    <div>
+    <div className="bg-dark">
    
       <Provider store={store}>
         <CartContextProvider>

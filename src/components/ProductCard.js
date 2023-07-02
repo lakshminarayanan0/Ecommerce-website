@@ -1,13 +1,24 @@
+import React from 'react';
 import { Card } from 'react-bootstrap';
 import AddToCart from './AddToCart';
+import { Link } from 'react-router-dom';
 
 
 
-const ProductCard = ({ product }) => (
+
+
+const ProductCard = ({ product }) => {
+
+
+
+  return (
  
+    <Link to={`/product/${product.id}`} className="product-card-link">
   <Card 
-  style={{width:'500px',height:'500px',margin:'17px',borderRadius:'20px',padding:'10px'}}
+  style={{width:'',height:'500px',margin:'17px',borderRadius:'20px',padding:'10px'}}
   bg='secondary'>
+
+
 
     <Card.Img 
     variant="top"
@@ -23,7 +34,10 @@ const ProductCard = ({ product }) => (
       <AddToCart  product={product} />
       </div>
     </Card.Body>
+
   </Card>
+  </Link>
 );
+  }
 
 export default ProductCard;

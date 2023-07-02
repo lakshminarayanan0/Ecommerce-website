@@ -9,7 +9,7 @@
           
             const ProductList = ({ selectedCategory }) => {
               const [products, setProducts] = useState([]);
-              const [loading, setLoading] = useState(false);
+              const [loading, setLoading] = useState(false); 
               useEffect(() => {
                 setLoading(true);
                 fetch(`https://fakestoreapi.com/products/category/${selectedCategory}`)
@@ -29,8 +29,8 @@
               } else {
                 return (  
                   <div className="products   
-                  container-fluid bg-dark " 
-                  >
+                  container-fluid  " 
+                  > 
                     <section className="productList container-fluid">
                     {products.map((product) => ( 
                       <ProductCard product={product} />
